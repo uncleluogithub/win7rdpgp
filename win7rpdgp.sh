@@ -1,6 +1,6 @@
 apt-get update
 echo "下载Windows文件中..."
-wget -O w7x64.img bit.ly/uncleluo-win7jingxiang
+wget -O w7x64.img https://bit.ly/uncleluo-win7image
 echo "下载ngrok远程连接组件"
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
