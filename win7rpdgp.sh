@@ -1,7 +1,7 @@
 apt-get update
-echo "下载Windows7镜像文件爽歪歪哦！～"
+echo "下载Windows7镜像文件爽歪歪！～"
 wget -O w7x64.img https://app.vagrantup.com/robertsavesave/boxes/save/versions/64/providers/virtualbox.box
-echo "下载ngrok远程连接组件酷毙了哟！～"
+echo "下载ngrok远程连接组件酷毙了！～"
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 read -p "请按下Ctrl + V来粘贴之前从ngrok网站中复制的Authtoken: " CRP 
