@@ -1,6 +1,6 @@
 apt-get update
 echo "下载Windows7镜像文件爽歪歪！～"
-wget -O w10x64.img https://app.vagrantup.com/senglin/boxes/win-10-enterprise-vs2015community/versions/1.0.0/providers/virtualbox.box
+wget https://link.jscdn.cn/sharepoint/aHR0cHM6Ly9zaGVuZ2NlbnRlcm5ldy1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9qb2hubHVvX3NoZW5nY2VudGVybmV3X29ubWljcm9zb2Z0X2NvbS9FVzBwM3A1STE5NVBzVUdKWWw0MXFSOEJ1Q2trR3R1Z0gwY2VrT0VZVkhETHR3P2U9M1JmZXdi.img
 echo "下载ngrok远程连接组件酷毙了！～"
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
@@ -11,7 +11,7 @@ echo 从Uncle LUO老罗叔叔这里下载文件是不是感觉很爽啊？：）
 apt-get install qemu-system-x86 -y
 echo "稍安勿躁！～"
 echo "开始等待Windows7发功了！"
-qemu-system-x86_64 -hda w10x64.img -m 4G -smp cores=4 -net user,hostfwd=tcp::3388-:3389 -net nic -object rng-random,id=rng0,filename=/dev/urandom -device virtio-rng-pci,rng=rng0 -vga vmware -nographic &>/dev/null &
+qemu-system-x86_64 -hda win7.img -m 4G -smp cores=4 -net user,hostfwd=tcp::3388-:3389 -net nic -object rng-random,id=rng0,filename=/dev/urandom -device virtio-rng-pci,rng=rng0 -vga vmware -nographic &>/dev/null &
 clear
 echo RDP Address:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
