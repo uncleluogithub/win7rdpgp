@@ -11,7 +11,7 @@ echo 从老罗叔叔这里下载文件是不是感觉很爽？：）
 apt-get install qemu-system-x86 -y
 echo "稍安勿躁"
 echo "开始Windows发功了"
-qemu-system-x86_64 -hda aHR0cHM6Ly9zaGVuZ2NlbnRlcm5ldy1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9qb2hubHVvX3NoZW5nY2VudGVybmV3X29ubWljcm9zb2Z0X2NvbS9FVzBwM3A1STE5NVBzVUdKWWw0MXFSOEJ1Q2trR3R1Z0gwY2VrT0VZVkhETHR3P2U9M1JmZXdi.img -m 4G -smp cores=4 -net user,hostfwd=tcp::3388-:3389 -net nic -object rng-random,id=rng0,filename=/dev/urandom -device virtio-rng-pci,rng=rng0 -vga vmware -nographic &>/dev/null &
+qemu-system-x86_64 -hda win7.img -m 4G -smp cores=4 -net user,hostfwd=tcp::3388-:3389 -net nic -object rng-random,id=rng0,filename=/dev/urandom -device virtio-rng-pci,rng=rng0 -vga vmware -nographic &>/dev/null &
 clear
 echo RDP Address:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
