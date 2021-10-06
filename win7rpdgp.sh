@@ -1,10 +1,10 @@
 apt-get update
-echo "同学们！朋友们！罗叔变戏法开始了！~现在在下载Windows文件中..."
+echo "同学们，朋友们，罗叔变戏法开始了！~现在在下载Windows文件中..."
 wget -O win7.img https://link.jscdn.cn/sharepoint/aHR0cHM6Ly9jYW1wdXNtY2NkLW15LnNoYXJlcG9pbnQuY29tLzp1Oi9nL3BlcnNvbmFsL2xpbmRhX3JpY2hfY2FtcHVzX21jY2RfZWR1L0VVeXl6VWVHV1RwQWhjMVlSZWRGVG5nQk1NZDhCbXgwU1NiVHhqTVBTcGwxLWc_ZT1vbllncFM.img
 echo "亲们，而今在下载ngrok远程连接组件中..."
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
-read -p "在这里，请各位按下Ctrl + V来粘贴在ngrok网站中所复制的Authtoken: " CRP 
+read -p "粘贴key在这里，最后记得按回车确认，先请各位按下Ctrl + V来粘贴在ngrok网站中所复制的Authtoken: " CRP 
 ./ngrok authtoken $CRP 
 nohup ./ngrok tcp 3388 &>/dev/null &
 echo 三天两头跟着老罗叔叔一起薅羊毛是不是感觉很爽？：）
