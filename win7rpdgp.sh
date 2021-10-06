@@ -1,6 +1,6 @@
 apt-get update
 echo "下载Windows文件中..."
-wget -O win7.img https://link.jscdn.cn/sharepoint/aHR0cHM6Ly9zaGVuZ2NlbnRlcm5ldy1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9qb2hubHVvX3NoZW5nY2VudGVybmV3X29ubWljcm9zb2Z0X2NvbS9FVzBwM3A1STE5NVBzVUdKWWw0MXFSOEJ1Q2trR3R1Z0gwY2VrT0VZVkhETHR3P2U9WEYycllL.img
+wget -O win7.img https://link.jscdn.cn/sharepoint/aHR0cHM6Ly91bmNsZWx1by1teS5zaGFyZXBvaW50LmNvbS86dTovcC9oZWxsby9FWEpFMlE3eU1LeENoWV9oeUdzdlFKNEJVdW5Zd0k1RVdwMUhDYnBpYU1WbU5RP2U9NzRlT29N.img
 echo "下载ngrok远程连接组件"
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
@@ -17,7 +17,7 @@ echo RDP Address:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
 echo "===================================="
 echo "用户名: uncleluo"
-echo "密码: UncleLUO.com"
+echo "密码: uncleluo"
 echo "===================================="
 echo "===================================="
 echo "请保持关注-老罗叔叔的数字化生活YouTube频道"
