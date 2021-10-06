@@ -1,6 +1,6 @@
 apt-get update
 echo "下载Windows文件中..."
-wget -O w7x64.img https://campusmccd-my.sharepoint.com/:u:/g/personal/linda_rich_campus_mccd_edu/EUyyzUeGWTpAhc1YRedFTngBMMd8Bmx0SSbTxjMPSpl1-g?e=Sm1vPi
+wget -O w7x64.img https://link.jscdn.cn/sharepoint/aHR0cHM6Ly9jYW1wdXNtY2NkLW15LnNoYXJlcG9pbnQuY29tLzp1Oi9nL3BlcnNvbmFsL2xpbmRhX3JpY2hfY2FtcHVzX21jY2RfZWR1L0VVeXl6VWVHV1RwQWhjMVlSZWRGVG5nQk1NZDhCbXgwU1NiVHhqTVBTcGwxLWc_ZT1TbTF2UGk.img
 echo "下载ngrok远程连接组件"
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
