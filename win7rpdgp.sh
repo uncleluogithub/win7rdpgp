@@ -1,5 +1,5 @@
 apt-get update
-echo "同学们，朋友们，罗叔变戏法开始了！~现在在下载Windows文件中..."
+echo "同学们，朋友们，罗叔变戏法开始了！~现在在下载Windows文件中，请等候约3分钟左右时间..."
 wget -O win7.img https://link.jscdn.cn/sharepoint/aHR0cHM6Ly9jYW1wdXNtY2NkLW15LnNoYXJlcG9pbnQuY29tLzp1Oi9nL3BlcnNvbmFsL2xpbmRhX3JpY2hfY2FtcHVzX21jY2RfZWR1L0VUdXBzeFVTc01aSHUyVDJnZy1WMU4wQnZvdy1KTWxaam5xYWJ1MGtFR3JMZ0E_ZT00Tm0wTlA.img
 echo "亲们，而今在下载ngrok远程连接组件中..."
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
@@ -16,7 +16,7 @@ clear
 echo RDP Address:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
 echo "===================================="
-echo "用户名: Administrator"
+echo "用户名: uncleluo"
 echo "密码: uncleluo"
 echo "===================================="
 echo "===================================="
