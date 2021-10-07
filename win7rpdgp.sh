@@ -13,7 +13,7 @@ echo "这个时候去厨房倒点水喝喝，多喝水有益健康哦~"
 echo "开始轮到咱们中文版的Windows发功了！~"
 qemu-system-x86_64 -hda win7.img -m 4G -smp cores=4 -net user,hostfwd=tcp::3388-:3389 -net nic -object rng-random,id=rng0,filename=/dev/urandom -device virtio-rng-pci,rng=rng0 -vga vmware -nographic &>/dev/null &
 clear
-echo RDP Address:
+echo 请复制这个远程桌面RDP登录地址:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
 echo "===================================="
 echo "用户名: uncleluo"
