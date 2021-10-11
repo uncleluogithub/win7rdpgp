@@ -1,5 +1,5 @@
 apt-get update
-echo "同学们，朋友们，罗叔变戏法开始了！~现在在下载Windows文件中，请等候约2分钟左右时间..."
+echo "同学们，朋友们，罗叔变戏法开始了！~现在在下载Windows文件中，请等候约1分钟左右时间..."
 wget -O win7.img https://link.jscdn.cn/sharepoint/aHR0cHM6Ly9jYW1wdXNtY2NkLW15LnNoYXJlcG9pbnQuY29tLzp1Oi9nL3BlcnNvbmFsL2xpbmRhX3JpY2hfY2FtcHVzX21jY2RfZWR1L0VSTW5BdjZUVDlsRnNPYzljSGJhaVZJQjN0dHdQM0RzZDZ1OGFBTXpYa0c3N2c_ZT1WWmEyUng.img
 echo "朋友们！下载ngrok远程连接组件中..."
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
