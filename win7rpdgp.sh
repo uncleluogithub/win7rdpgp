@@ -6,7 +6,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/nu
 unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 read -p "粘贴key在这里，最后记得按回车确认，先请各位按下Ctrl + V来粘贴在ngrok网站中所复制的Authtoken: " CRP 
 ./ngrok authtoken $CRP 
-nohup ./ngrok tcp 3388 --region jp &>/dev/null &
+nohup ./ngrok tcp 3388 --region ap &>/dev/null &
 echo 三天两头跟着老罗叔叔一起薅羊毛是不是感觉很爽？：）
 apt-get install qemu-system-x86 -y
 echo "这个时候去厨房倒点水喝喝，多喝水有益健康哦~"
